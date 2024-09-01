@@ -10,6 +10,7 @@ body {
 
 .header .logo {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 5px;
 }
@@ -22,8 +23,13 @@ body {
     color: var(--maincolor);
 }
 
+.menu {
+    display: none;
+}
+
 .nav ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 17px
 }
 
@@ -37,6 +43,7 @@ body {
 
 .auth {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
 }
@@ -58,4 +65,31 @@ body {
     background-color: var(--maincolor);
     color: #FFFFFF;
 
+}
+
+@media screen and (max-width:992px) {
+
+    .nav,
+    .auth {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .container {
+        width: calc(100% - 40px);
+    }
+
+    .header .logo img {
+        width: 20px;
+    }
+
+    .header .logo a {
+        font-size: 12px;
+    }
 }
