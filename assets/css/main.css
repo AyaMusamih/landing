@@ -8,14 +8,14 @@ body {
     padding: 12px 0px;
 }
 
-.header .logo {
+.logo {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 5px;
 }
 
-.header .logo img {
+.logo img {
     width: 40px;
 }
 
@@ -27,13 +27,13 @@ body {
     display: none;
 }
 
-.nav ul {
+.navbar ul {
     display: flex;
     flex-wrap: wrap;
     gap: 17px
 }
 
-.nav ul li a {
+.navbar ul li a {
     color: #101928;
 }
 
@@ -69,7 +69,7 @@ body {
 
 @media screen and (max-width:992px) {
 
-    .nav,
+    .navbar,
     .auth {
         display: none;
     }
@@ -92,4 +92,45 @@ body {
     .header .logo a {
         font-size: 12px;
     }
+}
+
+footer {
+    background-color: #393E46;
+    color: #FFFFFF;
+    padding: 50px 0;
+}
+
+footer a {
+    color: #FFFFFF;
+}
+
+.footer-start {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-start .icons img {
+    border: solid 1px #FFFFFF;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.footer-end {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.footer-end .footer-items nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+
 }
