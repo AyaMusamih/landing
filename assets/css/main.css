@@ -146,32 +146,30 @@ footer a {
 }
 
 
-@media screen and (max-width: 786px) {
-    footer .row {
-        flex-direction: column;
-    }
+@media screen and (max-width: 768px) {
 
     .footer-start,
     .footer-end {
         width: 100%;
     }
+}
 
-    .footer-end {
-        gap: 10px;
-    }
+@media screen and (max-width: 660px) {
 
-    .footer-end .footer-items {
-        width: calc((100% - 10px) / 4);
+    .footer-end,
+    .footer-items {
+        width: calc(100% / 2);
+        margin: 0 auto 20px auto;
     }
 
 }
 
-@media screen and (max-width: 576px) {
-    .footer-end {
-        gap: 10px;
-    }
 
-    .footer-end .footer-items {
-        width: calc((100% - 10px) / 2);
-    } 
+@media screen and (max-width: 450px) {
+
+    .footer-end,
+    .footer-items {
+        width: 100%;
+        text-align: center;
+    }
 }
