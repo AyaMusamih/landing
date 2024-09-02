@@ -99,18 +99,18 @@ body {
 }
 
 .courses .row {
-    gap: 100px;
+    gap: 80px;
 }
 
-.courses-items,
-.courses-description {
-    width: calc((100% - 100px) /2);
+.courses-items {
+    width: 60%
 }
 
 .courses-items {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    margin-left: 80px;
 }
 
 .the-course {
@@ -186,6 +186,7 @@ body {
 }
 
 .courses-description {
+    flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -200,6 +201,7 @@ body {
 }
 
 .courses-description p:last-of-type {
+    width: 350px;
     font-size: 15px;
     color: #969696;
     margin-top: 40px;
@@ -216,11 +218,16 @@ body {
 
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1400px) {
 
     .courses-items,
     .courses-description {
-        width: 100%
+        width: 100%;
+        margin: auto;
+    }
+
+    .courses-description p:last-of-type {
+        width: 100%;
     }
 }
 
@@ -235,7 +242,6 @@ body {
     }
 
 }
-
 
 .testimonials {
     padding: 60px 0;
@@ -259,6 +265,17 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     gap: 18px;
+    position: relative;
+}
+
+.testimonial::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom: solid 70px transparent;
+    border-top: solid 70px #F4F4F4;
+    border-left: solid 70px transparent;
 }
 
 .user-info {
