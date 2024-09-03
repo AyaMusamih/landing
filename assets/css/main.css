@@ -182,20 +182,20 @@ body {
 
 .user-pic img {
     width: 400px;
-    margin-left: 40%;
+    margin-left: 50%;
 
 }
 
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 1260px) {
 
     .user-pic img {
         width: 350px;
-        margin-left: 15%;
+        margin-left: 20%;
     }
 
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 940px) {
 
     .begin {
         width: 350px;
@@ -208,7 +208,7 @@ body {
 
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 775px) {
     .begin {
         width: 300px;
     }
@@ -218,7 +218,7 @@ body {
     }
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 680px) {
     .intro .row {
         gap: 40px;
     }
@@ -388,8 +388,110 @@ body {
     }
 }
 
+.course-summary {
+    background-color: var(--maincolor);
+    padding: 20px 0;
+}
 
+.studying {
+    flex-grow: 1;
+}
 
+.studying img {
+    width: 450px;
+    margin-left: 50px;
+}
+
+.taken-courses {
+    width: 400px;
+    margin-right: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.taken-courses .selected-courses {
+    color: #F0C932;
+    font-family: var(--subfont);
+    font-size: 14px;
+}
+
+.taken-courses h2 {
+    width: 300px;
+    color: #FFFFFF;
+    font-size: 32px;
+}
+
+.taken-courses .lorem {
+    color: #DDDDDD;
+}
+
+.course-stats {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 97px;
+    margin-top: 20px;
+}
+
+.statistics {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--subfont);
+}
+
+.statistics span {
+    color: #F0C932;
+    font-weight: 700;
+}
+
+.statistics p {
+    color: #DDD;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 1090px) {
+    .taken-courses {
+        margin-right: 0;
+    }
+
+    .studying img {
+        width: 350px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .course-summary .row {
+        gap: 30px;
+    }
+
+    .course-summary {
+        padding-bottom: 24px;
+    }
+
+    .studying,
+    .taken-courses {
+        width: 100%;
+    }
+
+    .studying img {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .studying img {
+        width: 360px;
+    }
+
+    .course-stats {
+        gap: 70px;
+    }
+}
 
 .courses {
     padding-top: 60px;
