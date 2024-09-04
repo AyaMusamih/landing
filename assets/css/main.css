@@ -585,7 +585,7 @@ body {
 }
 
 .courses-description {
-    flex-grow: 1;
+    width: 350px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -600,7 +600,6 @@ body {
 }
 
 .courses-description p:last-of-type {
-    width: 350px;
     font-size: 15px;
     color: #969696;
     margin-top: 40px;
@@ -625,18 +624,11 @@ body {
         margin: auto;
     }
 
-    .courses-description p:last-of-type {
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 768px) {
 
     .the-course {
-        width: 100%;
-    }
-
-    .courses-description {
         width: 100%;
     }
 
